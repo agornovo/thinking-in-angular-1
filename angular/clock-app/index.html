@@ -6,9 +6,11 @@
 </head>
 
 <body>
+	<h1>Clock App</h1>
 	<div ng-controller="TimeCtrl">
-		<h1>Clock App</h1>
+		Please enter your name: <input ng-model="userName" type="text"/>
 		<p>The current time is: {{timeString}}/></p>
+		<p>Your name is {{userName}}</p>
 		<button ng-click="updateTime()">Update Time</button>
 	</div>
 </body>
